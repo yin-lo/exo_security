@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+
+<h2 class="content__title">Livre d'or</h2>
+
+<form class="form" action="/golden-book" method="POST">
+  <label for="desc">Votre message</label>
+  <textarea class="form_field_input" id="desc" name="description"></textarea>
+  <button class="submit__btn" type="submit">Ecrire</button>
+</form>
+
+<% for (const comment of comments) { %>
+  <p class="comment"><%- comment.description %></p>
+<% } %>
+
+<%- include('partials/footer') %>
