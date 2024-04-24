@@ -6,13 +6,17 @@ Hey salut toi ! Je suis le lead dev d'Odomac, regarde mon code comme il est beau
 
 Et bah non c'était une blague. Il se trouve qu'il y a plein de failles de sécurité dans cette application, pourquoi pas faire un petit tour d'horizon ?
 
+## Installation de l'application
+
+- `npm i && node app/database/seeding.js`
+
 ## OWASP
 
 - [C'est quoi ?](https://owasp.org/)
 - [Des docs intéressants ?](https://cheatsheetseries.owasp.org/index.html)
 - [Le top 10](https://owasp.org/www-project-top-ten/)
 
-### [Contrôles d'accès défaillants](https://owasp.org/Top10/fr/A01_2021-Broken_Access_Control/) 
+### [Contrôles d'accès défaillants](https://owasp.org/Top10/fr/A01_2021-Broken_Access_Control/)
 
 Il s'agit tout simplement de vérifier que des ressources ne sont pas accessibles sans les permissions qui vont bien. Un utilisateur lambda ne doit par exemple avoir aucun accès aux parties admin.
 
@@ -38,8 +42,8 @@ Au passage, on parle d'https sur le site d'owasp ? c'est quoi ça ? Quelques lie
 
 Il peut s'agir de différentes injections. La solution : NTUI
 
-  - Injection SQL : Il faut vérifier ce qu'on insère dans la bdd, on n'avait pas déjà parlé de requêtes préparées, et si on se faisait un petit flashback ?
-  - Faille XSS : en plus il faut aussi vérifier ce qu'on insère dans HTML, il faut faire attention à ne pas interpréter des scripts involontairement 
+- Injection SQL : Il faut vérifier ce qu'on insère dans la bdd, on n'avait pas déjà parlé de requêtes préparées, et si on se faisait un petit flashback ?
+- Faille XSS : en plus il faut aussi vérifier ce qu'on insère dans HTML, il faut faire attention à ne pas interpréter des scripts involontairement
 
 ### [Mauvaise configuration de sécurité](https://owasp.org/Top10/fr/A05_2021-Security_Misconfiguration/)
 
@@ -54,6 +58,7 @@ On connait le chemin, on va vérifier ça
 Tout est dans le titre. On utilise plein de package npm souvent mis à jour. Ces mises à jour ne se font pas sans raisons, il peut y avoir des corrections de failles identifiées. Un exemple pour [sequelize](https://security.snyk.io/vuln/SNYK-JS-SEQUELIZE-450222)
 
 Quelques commandes utiles :
+
 - `npm update PACKAGE`
 - `npm audit`
 
