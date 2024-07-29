@@ -1,10 +1,4 @@
-# Odomac
-
-Hey salut toi ! Je suis le lead dev d'Odomac, regarde mon code comme il est beau !
-
-Ça t'en bouche un coin ?
-
-Et bah non c'était une blague. Il se trouve qu'il y a plein de failles de sécurité dans cette application, pourquoi pas faire un petit tour d'horizon ?
+# SECURITY
 
 ## Installation de l'application
 
@@ -64,6 +58,6 @@ Quelques commandes utiles :
 
 Si on regarde notre projet on peut se sentir concerné par ce genre de soucis, et vérifier les infos sur les dépots de nos dépendances, [un exemple au hasard](https://github.com/sequelize/sequelize/issues/11400 )
 
-### Bonus
+### +
 
 Si t'en veux encore voilà un peu de lecture sur les [CSRF](https://kourou.oclock.io/ressources/fiche-recap/cross-site-request-forgery-csrf/)
